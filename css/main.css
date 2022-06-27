@@ -3,14 +3,14 @@ body {
 }
 
 header, section {
-    background-color: #FFF7F4;
+    background-color: #FFF7F4; 
 }
 
 nav a, section a {
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 nav a {
