@@ -1,5 +1,26 @@
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1178px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header, section {
@@ -19,12 +40,15 @@ nav a {
 }
 
 section a {
-    padding: 10px;
+    display: inline-block;
+    padding: 10px 22px;
     color: #fff;
+    border-radius: 5px;
     background-color: #FF5300;
 }
 
 h1 {
+    margin-bottom: 18px;
     font-size: 48px;
     line-height: 72px;
     font-weight: 700;
@@ -32,7 +56,18 @@ h1 {
 }
 
 p {
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
     color: #7B7B7B;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+
+section > div {
+    display: flex;
+    align-items: center;
 }
