@@ -40,6 +40,12 @@ h1, h2, h3, p {
     color: #373737;
 }
 
+.block__third_title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
 .block__help-txt {
     position: relative;
     display: inline-block;
@@ -92,9 +98,6 @@ h1, h2, h3, p {
 }
 
 .nav__item, .block--main__link {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
     text-decoration: none; 
 }
 
@@ -249,8 +252,6 @@ h1, h2, h3, p {
     display: inline-block;
     min-width: 110px;
     padding: 15px 38px;
-    font-size: 20px;
-    line-height: 30px;
     color: #7B7B7B;
     text-decoration: none;
     text-align: center;
@@ -327,9 +328,6 @@ h1, h2, h3, p {
 }
 
 .swiper-testimonial__name {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
     color: #FF5300;
 }
 
@@ -430,12 +428,6 @@ h1, h2, h3, p {
     background-color: #FF5300;
 }
 
-.block--ci__desc {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
-}
-
 .block--ci__item {
     position: relative;
     width: 25%;
@@ -457,4 +449,74 @@ h1, h2, h3, p {
 .block--ci__title {
     margin-bottom: 0;
     margin-top: 4px;
+}
+
+.block--blog__top {
+    margin-bottom: 60px;
+}
+
+.block--blog__items {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.block--blog__item {
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.block--blog__link {
+    display: inline-block;
+    padding: 15px;
+    color: #373737;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.block--blog__details {
+    margin-bottom: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    line-height: 19px;
+}
+
+.block--blog__detail {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.block-blog__icon {
+    margin-right: 5px;
+}
+
+.block--blog__btn {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 12px 22px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #FF5300;
+    filter: drop-shadow(4px 5px 15px rgba(255, 83, 0, 0.1));
+}
+
+.block--blog__img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.block--blog__third-title {
+    margin-bottom: 15px;
+}
+
+.block--newsletter__content {
+    color: #fff;
+    background-color: #FF5300;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
