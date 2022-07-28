@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
@@ -80,6 +80,34 @@ h1, h2, h3, p {
     font-size: 16px;
     line-height: 24px;
     color: #7B7B7B;
+}
+
+.block__input {
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #373737;
+}
+
+.block__input::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7B7B;
+}
+
+.block__input:focus {
+    outline: none;
+}
+
+.block__btn {
+    padding: 18px 34px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #FF5300;
+    border: none;
+    border-radius: 5px;
 }
 
 .header {
@@ -516,7 +544,83 @@ h1, h2, h3, p {
 }
 
 .block--newsletter__content {
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
     color: #fff;
     background-color: #FF5300;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.block--newsletter__left {
+    width: 40%;
+}
+
+.block--newsletter__right {
+    width: 60%;
+}
+
+.block--newsletter--help {
+    color: #fff;
+}
+
+.block--newsletter--help:after {
+    background-color: #fff;
+} 
+
+.block--newsletter__form {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.block--footer {
+    color: #fff;
+    background-image: url('../img/footer-bg.jpg');
+}
+
+.block--footer__about {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.block--footer__txt {
+    color: #fff;
+}
+
+.block--footer__ttl {
+    color: #FF5300;
+}
+
+.block--footer__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.block--footer__aitem {
+    width: 40%;
+    padding: 0 15px;
+}
+
+.block--footer__bitem {
+    min-width: 20%;
+    padding: 0 15px;
+}
+
+.block--footer__social {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.block--footer__social:not(:last-child) {
+    margin-right: 20px;
 }
