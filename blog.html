@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" >
 </head>
-<body>
+<body class=""><!-- add class "menu-open" to see menu on responsive  -->
     <header class="header">
         <div class="container header__content">
             <img src="./img/logo.png" alt="logo" />
-            <nav class="nav">
+            <a href="" class="header__burger">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#373737"/>
+                </svg>
+            </a>                
+            <nav class="header__nav">
                 <a class="block__third_title nav__item" href="index.html">Home</a>
                 <a class="block__third_title nav__item" href="#">About Us</a>
                 <a class="block__third_title nav__item" href="#">Services</a>
@@ -292,47 +297,88 @@
                         <a class="block__btn block--posts__btn" href="">Read More</a>
                     </div>
                 </div>
+                <div class="block__pagination">
+                    <span class="block__pagination__it block__pagination__it--active">01</span>
+                    <a class="block__pagination__it" href="">02</a>
+                    <a class="block__pagination__it" href="">03</a>
+                    <a class="block__pagination__it" href="">04</a>
+                    <a class="block__pagination__it" href="">05</a>
+                </div>
             </div>
             <div class="block--sidebar">
                 <form class="block--sidebar__form">
                     <input class="block__input" placeholder="Search here..." type="text" />
                     <input class="block--sidebar__submit" value="" type="submit" />
                 </form>
-                <div>
-                    <h3></h3>
+                <div class="block--sidebar__box block__latest">
+                    <h3 class="block--sidebar__ttl">Letest Post</h3>
                     <div>
-                        <a href="">
-                            <picture>
-                                <img src="" alt="" />
+                        <a href="" class="block__latest__link">
+                            <picture class="block--sidebar__pic">
+                                <img class="block--sidebar__img" src="./img/blog1.jpg" alt="blog 1" />
                             </picture>
-                            <h4></h4>
+                            <h4 class="block__latest__ttl">Minimal Post With A Preview Image</h4>
                         </a>
-                        <a href="">
-                            <picture>
-                                <img src="" alt="" />
+                        <a href="" class="block__latest__link">
+                            <picture class="block--sidebar__pic">
+                                <img class="block--sidebar__img" src="./img/blog2.jpg" alt="blog 2" />
                             </picture>
-                            <h4></h4>
+                            <h4 class="block__latest__ttl">Good Design Makes Me Happy</h4>
+                        </a>
+                        <a href="" class="block__latest__link">
+                            <picture class="block--sidebar__pic">
+                                <img class="block--sidebar__img" src="./img/blog3.jpg" alt="blog 3" />
+                            </picture>
+                            <h4 class="block__latest__ttl">Best 27 Design Blogs for 2021</h4>
+                        </a>
+                        <a href="" class="block__latest__link">
+                            <picture class="block--sidebar__pic">
+                                <img class="block--sidebar__img" src="./img/blog4.jpg" alt="blog 4" />
+                            </picture>
+                            <h4 class="block__latest__ttl">Creative Ways To Use Infographics For Your Business</h4>
+                        </a>
+                        <a href="" class="block__latest__link">
+                            <picture class="block--sidebar__pic">
+                                <img class="block--sidebar__img" src="./img/blog5.jpg" alt="blog 5" />
+                            </picture>
+                            <h4 class="block__latest__ttl">Tumblr Banner Templates : Tips To Get Better Engagement</h4>
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3></h3>
+                <div class="block--sidebar__box block__cat">
+                    <h3 class="block--sidebar__ttl">Categories</h3>
                     <div>
-                        <a href="">
-                            xxx
-                            <span></span>
+                        <a href="" class="block__cat__link">
+                            Business
+                            <span class="block__cat__count">05</span>
                         </a>
-                        <a href="">
-                            xxx
-                            <span></span>
+                        <a href="" class="block__cat__link">
+                            Introductions
+                            <span class="block__cat__count">15</span>
+                        </a>
+                        <a href="" class="block__cat__link">
+                            Design Blog
+                            <span class="block__cat__count">65</span>
+                        </a>
+                        <a href="" class="block__cat__link">
+                            UI/UX Design
+                            <span class="block__cat__count">08</span>
+                        </a>
+                        <a href="" class="block__cat__link">
+                            App Development
+                            <span class="block__cat__count">16</span>
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3></h3>
+                <div class="block--sidebar__box block__tag">
+                    <h3 class="block--sidebar__ttl">Tags</h3>
                     <div>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="" class="block__tag__it block__text">Business</a>
+                        <a href="" class="block__tag__it block__text">Graphic Design</a>
+                        <a href="" class="block__tag__it block__text">Technology</a>
+                        <a href="" class="block__tag__it block__text">App Development</a>
+                        <a href="" class="block__tag__it block__text">Website Design</a>
+                        <a href="" class="block__tag__it block__text">Business Idea</a>
                     </div>
                 </div>
             </div>
