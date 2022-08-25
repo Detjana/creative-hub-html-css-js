@@ -1042,11 +1042,14 @@ h1, h2, h3, h4, p {
         width: 100%;
         position: absolute;
         top: 110px;
+        left: 0;
         background-color: #fff;
     }
     .menu-open .nav__item {
-        display: inline-block;
-        width: 100%;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
 }
 
@@ -1258,6 +1261,16 @@ h1, h2, h3, h4, p {
 
     .block__help-txt:after {
         right: -39px;
+    }
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu-open .header__nav {
+        top: 90px;
+        padding-top: 20px;
     }
 
     .block--main__content {
