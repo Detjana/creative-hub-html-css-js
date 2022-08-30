@@ -1042,6 +1042,7 @@ h1, h2, h3, h4, p {
 }
 .block--bd__img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -1140,6 +1141,10 @@ h1, h2, h3, h4, p {
     color: #fff;
 }
 
+.block__ci__wc {
+    margin-bottom: 50px;
+}
+
 .block__comments__textarea {
     width: 100%;
     height: 80px;
@@ -1157,12 +1162,22 @@ h1, h2, h3, h4, p {
 .block__ci {
     display: flex;
 }
+.block__ci:not(:last-child) {
+    margin-bottom: 20px;
+}
+.block__ci--reply {
+    margin-left: 100px;
+}
 .block__ci__pic {
     flex: none;
     width: 80px;
     height: 80px;
     margin-right: 20px;
     border-radius: 10px;
+}
+.block__ci__pic--reply {
+    width: 50px;
+    height: 50px;
 }
 .block__ci__img {
     width: 100%;
@@ -1174,6 +1189,25 @@ h1, h2, h3, h4, p {
     line-height: 30px;
     font-weight: 600;
     color: #FF5300;
+}
+.block__ci__name--reply {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.block__ci__reaction {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.block__ci__reaction:not(:last-child) {
+    border-right: 1px solid #7B7B7B;
+}
+.block__ci__content {
+    margin-bottom: 8px;
 }
 
 @media (max-width: 1300px) { /* < 1300px */
@@ -1578,6 +1612,41 @@ h1, h2, h3, h4, p {
     .block--posts {
         margin-bottom: 25px;
     }    
+    .block--details__det {
+        margin-bottom: 20px;
+    }
+    .block--bd__text {
+        padding: 20px 10px;
+    }
+    .block__comments__nav__item {
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .block__comments__nav, .block__ci__wc {
+        margin-bottom: 20px;
+    }
+    .block__ci__pic {
+        width: 60px;
+        height: 60px;
+    }
+    .block__ci__name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .block__ci__pic {
+        width: 50px;
+        height: 50px;
+    }
+    .block__ci--reply {
+        margin-left: 70px;
+    }
+    .block--bd__col {
+        width: 100%;
+    }
+    .block__author {
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width: 576px) { /* > 576px */
