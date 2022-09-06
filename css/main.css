@@ -1209,6 +1209,9 @@ h1, h2, h3, h4, p {
 .block__ci__content {
     margin-bottom: 8px;
 }
+.header__burger {
+    cursor: pointer;
+}
 
 @media (max-width: 1300px) { /* < 1300px */
     .swiper-button-prev {
